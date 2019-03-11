@@ -1,12 +1,18 @@
 #buttons li{
-	float: left;
+	display: inline-block;
+	font-size: 20px;
+	font-family: sans-serif;
+	border: none;
 	border-radius: 25px;
 	list-style: none;
+	list-style-position: inside;
 	text-align: center;
-	background-color: #000000;
-	margin-right: 30px;
-	width: 150px;
+	background-color: rgba(177, 14, 14, 0.295);
+	margin-right: 10px;
+	width: 200px;
 	line-height: 60px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+	
 }
 
 #buttons li a {
@@ -15,8 +21,27 @@
 	display: block;
 }
 
-#buttons li a:hover {
+#buttons li a:hover{
+	border-radius: 25px;
 	text-decoration: none;
-	color: #000000;
-	background-color: #33B5E5;
+	background-color: rgb(177, 14, 14);
+	color: rgba(255, 255, 255, 0.705);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+	transform: scale(1.1, 1.1);
+	transition: color 0.5s ease, background 0.5s ease, transform 0.5s ease;
+
+}
+
+body {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.651);
+	background-image: url(https://i.imgur.com/G1hdcNs.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 1000px 1000px;
+}
+
+ul li {
+	text-align: center
 }
