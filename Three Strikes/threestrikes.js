@@ -67,10 +67,6 @@ let DayColorChange = function() {
     fri.style.backgroundColor = 'gold';   
 }
 
-let choiceResult = function(cell) {
-    cell.innerHTML = strike; 
-}
-
 
 let subjectColor = function(cell) {
     if (cell.innerHTML === 'Science') {
