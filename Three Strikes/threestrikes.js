@@ -41,7 +41,7 @@ let startButton = document.getElementById('start');
 
 
 //global variables
-let schoolSubjects = ['P.E.', 'Science', 'Math', 'English', 'Social Studies', 'Japanese', 'Calligraphy', 'Moral Education', 'Home Economics', 'Arts & Crafts', 'Music']
+let schoolSubjects = ['P.E.', 'Science', 'Math', 'English', 'Social Studies', 'Japanese', 'Calligraphy', 'Moral Education', 'Home Economics', 'Art', 'Music']
 
 
 
@@ -80,13 +80,13 @@ let subjectColor = function(cell) {
     } else if (cell.innerHTML === 'Japanese') {
         cell.style.backgroundColor = "rgb(250, 240, 101, 0.4)";
     } else if (cell.innerHTML === 'Calligraphy') {
-        cell.style.backgroundColor = "rgbrgb(0, 215, 219, 0.4)";
+        cell.style.backgroundColor = "rgb(49, 49, 154, 0.4)";
     } else if (cell.innerHTML === 'Moral Education') {
-        cell.style.backgroundColor = "rgb(222, 68, 68, 0.4)";
+        cell.style.backgroundColor = "rgb(241, 147, 54, 0.4)";
     } else if (cell.innerHTML === 'Home Economics') {
-        cell.style.backgroundColor = "rgb(222, 68, 68, 0.4)";
-    } else if (cell.innerHTML === 'Arts & Crafts') {
-        cell.style.backgroundColor = "rgb(222, 68, 68, 0.4)";
+        cell.style.backgroundColor = "rgb(29, 174, 29, 0.4)";
+    } else if (cell.innerHTML === 'Art') {
+        cell.style.backgroundColor = "rgb(255, 255, 255)";
     }  else {
         cell.style.backgroundColor = "rgb(3, 0, 219, 0.4)";
     };

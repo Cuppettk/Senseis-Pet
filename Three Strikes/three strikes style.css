@@ -53,10 +53,10 @@ body {
 
 .daysquares {
     display: inline-block;
-    margin: 2px;
+    margin: 5px 5px;
     width: 250px;
     height: 100px; 
-    border: solid 1px;
+    border: solid 3px;
     border-color: black;
     vertical-align: center;
     font-family: 'Sniglet';
