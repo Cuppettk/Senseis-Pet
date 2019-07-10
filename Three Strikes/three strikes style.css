@@ -93,6 +93,10 @@ body {
     border: solid;
     border-radius: 10px;
 }
+.result-pic {
+    height: 100px;
+    width: 100px;
+}
 
 #mon {
     background-color: none;

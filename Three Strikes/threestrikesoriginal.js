@@ -44,7 +44,7 @@ let strike = "<image href='https://imgur.com/R5ye03Y'>"
 
 //global variables
 let schoolSubjects = ['P.E.', 'Science', 'Math', 'English', 'Social Studies', 'Japanese', 'Calligraphy', 'Moral Education', 'Home Economics', 'Art', 'Music']
-let rowElements = ['row-one-one', 'row-one-two', 'row-one-three', 'row-one-four', 'row-one-five', 'row-two-one', 'row-two-two', 'row-two-three', 'row-two-four', 'row-two-five', 'row-three-one', 'row-three-two', 'row-three-three', 'row-three-four', 'row-three-five', 'row-four-one', ]
+let rowElements = ['row-one-one', 'row-one-two', 'row-one-three', ]
 
 
 
