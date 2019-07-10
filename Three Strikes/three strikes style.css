@@ -16,7 +16,7 @@ body {
     font-family: 'Sniglet';
 }
 
-.number {
+.rule-number {
     font-family: 'Sniglet';
     font-size: 34px;
     padding-right: 20px;
@@ -28,6 +28,7 @@ body {
 }
 
 #start {
+    display: inline-block;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -41,8 +42,14 @@ body {
     color: whitesmoke;
     margin-bottom: 21px;
     cursor: pointer;
-
 }
+
+.buttons {
+    margin: auto;
+    text-align: center;
+}
+
+
 
 .daysquares {
     display: inline-block;
@@ -64,15 +71,27 @@ body {
 .gamesquares {
     text-align: center;
 }
+
+#row-five {
+    margin-bottom: 20%;
+}    
+
+
 .square {
-    font-family: 'Sniglet';
-    color: white;
+    text-align: center;
+    vertical-align: top;
     margin: 5px;
     width: 250px;
     height:100px;
-    background-color: black;
     display: inline-block;
     cursor: pointer;
+    background-color: azure;
+    font-family: 'Sniglet';
+    font-size: 30px;
+    color: black;
+    border-color: black;
+    border: solid;
+    border-radius: 10px;
 }
 
 #mon {

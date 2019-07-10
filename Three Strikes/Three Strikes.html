@@ -1,29 +1,35 @@
 <!DOCTYPE html>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <html>
-    <head>
-        <title>Three Strikes and You're Out!</title>
-        <link href='./three strikes style.css' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet" type="text/css">
-    </head>
+<head>
+    <title>Three Strikes and You're Out!</title>
+    <link href='./three strikes style.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet" type="text/css">
+    <script src="./handlebars-v4.1.2.js"></script>
+    <script id="round-number" type="text/x-handlebars-template">{{number}}</script>
+</head>
 
-        <body>
+    <body>
             <h3 id="instructions-title">Rules of the Game:</h3>
 
             <table align="center" class="instructions-row">
                 <tr>
-                    <td class="number">1</td>
+                    <td class="rule-number">1</td>
                     <td class="rules">Choose a square using the appropriate English</td>
                 </tr>
                 <tr>
-                    <td class="number">2</td>
+                    <td class="rule-number">2</td>
                 <td class="rules">If the square reveals a "O", you are safe</td>
             </tr>
             <tr>
-                <td class="number">3</td>
+                <td class="rule-number">3</td>
                 <td class="rules">If the square reveals a "X" you receive 1 strike.</td>
             </tr>
             <tr>
-                <td class="number">4</td>
+                <td class="rule-number">4</td>
                 <td class="rules">Three strikes and you're out!</td>
             </tr>
                 
@@ -32,8 +38,11 @@
     
 
     <h2 id="instructions-title">Make Your Choice!!</h2> 
-    
-    <div id="start">Start</div>
+
+    <div class="buttons">
+        <div id="start">Start</div>
+    </div> 
+
 
         <div class="gamesquares">
             <div id="mon" class="daysquares"><img class="daypics" src='https://i.imgur.com/7WRz8lc.png'>Monday</div>
@@ -43,47 +52,48 @@
             <div id="fri" class="daysquares"><img class="daypics" src='https://i.imgur.com/DQJY3OK.png'>Friday</div>
         </div>
 
-        
-        <div class="gamesquares">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        
+        <section id="the-game">
+            <div id="row-one" class="gamesquares">
+                <div class="square" id="row-one-one"><p>hello</p></div>
+                <div class="square" id="row-one-two"><p>hello</p></div>
+                <div class="square" id="row-one-three"><p>hello</p></div>
+                <div class="square" id="row-one-four"><p>hello</p></div>
+                <div class="square" id="row-one-five"><p>hello</p></div>
+            </div>
+            
 
-        <div class="gamesquares">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+            <div id="row-two" class="gamesquares">
+                <div class="square" id="row-two-one"><p>hello</p></div>
+                <div class="square" id="row-two-two"><p>hello</p></div>
+                <div class="square" id="row-two-three"><p>hello</p></div>
+                <div class="square" id="row-two-four"><p>hello</p></div>
+                <div class="square" id="row-two-five"><p>hello</p></div>
             </div>
 
-        <div class="gamesquares">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
+            <div id="row-three" class="gamesquares">
+                <div class="square" id="row-three-one"><p>hello</p></div>
+                <div class="square" id="row-three-two"><p>hello</p></div>
+                <div class="square" id="row-three-three"><p>hello</p></div>
+                <div class="square" id="row-three-four"><p>hello</p></div>
+                <div class="square" id="row-three-five"><p>hello</p></div>
+            </div>
 
-        <div class="gamesquares">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
+            <div id="row-four" class="gamesquares">
+                <div class="square" id="row-four-one"><p>hello</p></div>
+                <div class="square" id="row-four-two"><p>hello</p></div>
+                <div class="square" id="row-four-three"><p>hello</p></div> 
+                <div class="square" id="row-four-four"><p>hello</p></div>
+                <div class="square" id="row-four-five"><p>hello</p></div>
+            </div>
 
-        <div class="gamesquares">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-    
+            <div id="row-five" class="gamesquares">
+                <div class="square" id="row-five-one"><p>hello</p></div>
+                <div class="square" id="row-five-two"><p>hello</p></div>
+                <div class="square" id="row-five-three"><p>hello</p></div>
+                <div class="square" id="row-five-four"><p>hello</p></div>
+                <div class="square" id="row-five-five"><p>hello</p></div>
+            </div>
+        </section>
 
     
         </body>
